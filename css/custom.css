@@ -8,6 +8,7 @@
 
 .bg-primary {
     background-color: var(--color-primary-light);
+    color: var(--color-white);
 }
 .bg-grey {
     background-color: var(--color-grey);
@@ -21,6 +22,9 @@ h2 {
     text-align: center;
     font-size: 40px;
     line-height: 40px;
+}
+ span.sp-red{
+    color: var(--color-primary-light);
 }
 
 /************************************************************/
