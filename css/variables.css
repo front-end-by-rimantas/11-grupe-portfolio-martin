@@ -1,0 +1,12 @@
+:root {
+    --p-r: 243;
+    --p-g: 66;
+    --p-b: 54;
+    --color-primary-light: rgb(var(--p-r), var(--p-g), var(--p-b));
+    --color-primary-light-50: rgb(var(--p-r), var(--p-g), var(--p-b), 0.4);
+    /* --color-primary-light: #F34236; */
+    --color-primary-dark: #121213;
+    --color-footer: #212121;
+    --color-grey: #F3F3F3;
+    --color-white: #FFFFFF;
+}
