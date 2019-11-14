@@ -40,7 +40,6 @@
             float: left;
             min-height: 1px;
             margin: 0 var(--gap);
-            background-color: greenyellow;
         }
         .row > .col-1 {width: var(--col-1);}
         .row > .col-2 {width: var(--col-2);}
