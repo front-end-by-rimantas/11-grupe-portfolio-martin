@@ -4,23 +4,22 @@
 
 // hero
 
-// clients
-
 // about me
-
-// numbers
-
-// skills
-
-// latest work
-
-// job history
 
 // services
 
-// testimonials
+renderBlocks('my-services', services);
+
+// job history
+
+// Freelance work
+
+// portfolio
+
+// Founder
+
+// blog 
 
 // contact me
 
 // footer
-
