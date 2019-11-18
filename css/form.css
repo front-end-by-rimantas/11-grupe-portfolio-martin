@@ -1,0 +1,30 @@
+.col-8 > h5 {
+    font-size: 30px;
+}
+.col-8 {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: yellow;
+}
+    .col-8 > input {
+        display: inline-block;
+        float: left;
+        width: 45%;
+        margin: 20px 0;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .col-8 > input:last-of-type {
+        margin-left: 10%;
+    }
+    textarea {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        line-height: 26px;
+        font-size: 20px;
+        min-height: 130px;
+    }
