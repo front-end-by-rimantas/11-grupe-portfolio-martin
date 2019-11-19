@@ -1,0 +1,7 @@
+#main_header{
+    padding: 10px 0;
+    background-color: transparent;
+    position: fixed;
+    z-index: 1;
+    color: var(--color-white);
+}

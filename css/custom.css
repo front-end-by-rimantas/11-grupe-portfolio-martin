@@ -19,6 +19,12 @@ img{
 .bg-lblack {
     background-color: var(--color-footer);
 }
+.bg-img{
+    background-image: url(../img/home-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
 h2 {
     display: inline-block;
     width: 100%;
