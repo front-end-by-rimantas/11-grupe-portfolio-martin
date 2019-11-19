@@ -1,6 +1,7 @@
 #main_header{
-    padding: 0;
+    padding: 10px 0;
     background-color: transparent;
-    /* position: fixed;
-    z-index: 1; */
+    position: fixed;
+    z-index: 1;
+    color: var(--color-white);
 }
