@@ -1,0 +1,31 @@
+.blog {
+    display: inline-block;
+    width: 100%;
+}
+    .blog > .blog-img {
+        display: inline-block;
+        width: 100%;
+        
+    }
+    
+    .blog > .span-dates {
+
+    }
+        .blog > .span-dates > .span-date {
+            
+        }
+        .blog > .span-dates > .span-label {
+            
+        }
+    .blog > h5{
+
+    }
+    .blog > p{
+        
+    }
+
+    .blog > a{
+        
+    }
+
+
