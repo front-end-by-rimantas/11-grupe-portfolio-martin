@@ -1,0 +1,76 @@
+.hero{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: var(--color-white);
+}
+    .hero h3{
+        display: inline-block;
+        width: 100%;
+        margin-top: 100px;
+        font-size: 50px;
+        line-height: 80px;
+        font-family: Bahnschrift Light;
+    }
+    .hero h1{
+        display: inline-block;
+        width: 100%;
+        font-size: 90px;
+        line-height: 120px;
+        font-family: Bahnschrift Light;
+        letter-spacing: 2px;
+    }
+    .hero p{
+        display: inline-block;
+        /* is kaires ir desines po 30px*2 + tarpai po 10px *4 viso 100px ir dar is 2 kad iscentruotu*/
+        /* width: calc( (100% - 80px) / 8); */
+        /* width: auto; */
+        padding: 0;
+        font-size: 17px;
+        line-height: 32px;
+    }
+        .hero p::after {
+            content: '';
+            display: inline-block;
+            width: 1.5px;
+            height: 11px;
+            margin: 0 4px 0 6px;
+            background-color: var(--color-white);
+        }
+        .hero p:nth-child(5)::after{
+            display: none;
+        }
+    .hero a{
+        display: inline-block;
+        width: auto;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+@media (max-width: 900px) {
+    .hero h1{
+        font-size: 70px;
+        line-height: 100px;
+    }
+    .hero h3{
+        font-size: 40px;
+        line-height: 70px;
+    }
+    .hero p{
+        font-size: 15px;
+        line-height: 29px;
+    }
+    .hero p::after{
+        margin: 0 2px 0 3px;
+    }
+}
+@media (max-width: 600px) {
+    .hero h1{
+        font-size: 40px;
+        line-height: 70px;
+    }
+    .hero h3{
+        font-size: 28px;
+        line-height: 54px;
+    }
+}
