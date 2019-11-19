@@ -5,13 +5,18 @@
     font-family: "Poppins", sans-serif;
     box-shadow: 0 10px 12px var(--color-grey-d);
 }
+.blog:hover > .blog-img > img {
+    transform: scale(1.2);
+}
     .blog > .blog-img {
         display: inline-block;
         width: 100%;
+        overflow: hidden;
     }
         .blog > .blog-img > img {
             display: inline-block;
             width: 100%;
+            transition: transform 1000ms;
         }
     .blog > .blog-content {
         display: inline-block;
