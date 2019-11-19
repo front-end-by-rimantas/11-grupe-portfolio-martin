@@ -1,9 +1,23 @@
-.col-8 > .container {
+.row > .col-8 {
+    margin-top: 40px;
+}
+.col-8 > .message {
     display: inline-block;
     float: left;
     width: 100%;
-    background-color: ;
+    padding: 30px;
+    background-color: var(--color-white);
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 10px 12px var(--color-grey-d); ;
 }  
+.message > i {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 60px;
+    color: var(--color-grey);
+}
     .col-8  h5 {
         font-size: 30px;
         font-family: "Poppins", sans-serif;
@@ -13,6 +27,7 @@
             width: 100%;
             line-height: 25px;
             font-size: 16px;
+            padding-top: 10px;
             font-family: "Poppins", sans-serif;
             color: var(--color-grey-d);
     }
@@ -22,28 +37,30 @@
         width: 100%;
         margin-top: 30px;
         padding: 20px;
-        background-color: yellow;
     }
+      
         .col-8  input {
             display: inline-block;
             float: left;
-            width: 45%;
+            width: 49%;
             margin: 20px 0;
             line-height: 40px;
             font-size: 20px;
+            padding: 0 10px;
         }
         .col-8  input:last-of-type {
-            margin-left: 10%;
+            margin-left: 2%;
         }
         textarea {
             display: inline-block;
             float: left;
+            resize: vertical;
             width: 100%;
             line-height: 40px;
             font-size: 20px;
             min-height: 160px;
+            padding: 0 10px;
         }
-        input, textarea::placeholder {
-            padding: 0 12px;
-            font-family: "Poppins", sans-serif;
+        .message > a {
+            margin-top: 30px;
         }
