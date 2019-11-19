@@ -1,31 +1,69 @@
 .blog {
     display: inline-block;
     width: 100%;
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 10px 12px var(--color-grey-d);
 }
     .blog > .blog-img {
         display: inline-block;
         width: 100%;
-        
     }
-    
-    .blog > .span-dates {
-
-    }
-        .blog > .span-dates > .span-date {
-            
+        .blog > .blog-img > img {
+            display: inline-block;
+            width: 100%;
         }
-        .blog > .span-dates > .span-label {
-            
+    .blog > .blog-content {
+        display: inline-block;
+        width: 100%;
+        padding: 20px;
+    }
+        .blog > .blog-content > .span-dates {
+            display: inline-block;
+            width: 100%;
+            line-height: 16px;
+            font-size: 14px;
+            color: var(--color-grey-d);
         }
-    .blog > h5{
+            .blog > .blog-content > .span-dates > .span-value {
+                display: inline-block;
+                float: left;
+                margin-right: 5px;
+            }
+            .blog > .blog-content > .span-dates > .span-label {
+                display: inline-block;
+                float: left;
+                /* margin-left: 5px; */
+                border-left: 1px solid;
+                padding-left: 5px;
+            }
+        .blog > .blog-content > h5{
+            display: inline-block;
+            width: 100%;
+            line-height: 30px;
+            font-size: 28px;
+            margin: 10px 0;
+        }
+        .blog > .blog-content > p{
+            display: inline-block;
+            width: 100%;
+            color: var(--color-grey-d);
+            line-height: 20px;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 15px;
+        }
 
-    }
-    .blog > p{
-        
-    }
-
-    .blog > a{
-        
+        .blog > .blog-content > a{
+            display: inline-block;
+            color: var(--color-primary-light);
+            text-decoration: none;
+            border-bottom: 3px solid var(--color-primary-light);
+            padding: 0 0 3px 0;
+            font-family: "Poppins", sans-serif;
+            line-height: 20px;
+            font-size: 16px;
+            font-weight: 600;
     }
 
 
