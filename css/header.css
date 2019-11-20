@@ -1,7 +1,155 @@
 #main_header{
-    padding: 10px 0;
-    background-color: transparent;
+    padding: 10px 0 0;
     position: fixed;
+    background-color: transparent;
     z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;  
     color: var(--color-white);
+    border-bottom: 1px solid var(--color-grey-d-50);
 }
+    #main_header h3{
+        display: inline-block;
+        float: left;
+        font-size: 25px;
+        line-height: 55px;
+        padding: 5px;    
+    }
+    #main_header i{
+        display: none;
+        float: right;
+        width: 55px;
+        background-color: var(--color-primary-light);
+        margin-top: 10px;
+        padding: 5px 0;
+        /* line-height: 55px; */
+        font-size: 35px;
+        text-align: center;
+    }
+    #main_header nav{
+        display: inline-block;
+        float: right;
+        width: 500px;
+    }
+    #main_header nav > .dropdown{
+        position: relative;
+    } 
+        #main_header nav > a,
+        .dropdown > a {
+            display: inline-block;
+            float: left;
+            color: var(--color-white);
+            text-decoration: none;
+            padding: 5px 15px 7px;
+            font-size: 14px;
+            line-height: 52px;
+            font-family:arial black;
+            cursor: pointer;
+        }
+        #main_header nav > .dropdown > i{
+            display: none;
+            font-size: 20px;
+            padding: 2px 4px;
+            float: left;
+            background-color: var(--color-white);
+            color: var(--color-primary-dark);
+            border-left: 1px solid var(--color-grey-d);
+            border-bottom: 1px solid var(--color-grey-d);
+        }
+        .bot{
+            border-bottom: 2px solid transparent; 
+        }
+        .bot:hover {
+            border-bottom: 2px solid var(--color-white); 
+        }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: var(--color-white);
+                top:65px;
+                left:0;
+            }
+            .dropdown > .dropdown-content > a {
+                display: block;
+                color: var(--color-primary-dark);
+                font-size: 8px;
+                font-size: 15px;
+                font-family:arial;
+                text-decoration: none;
+                padding: 15px 30px 5px 20px;
+                cursor: pointer;
+            }
+            .dropdown:hover
+            .dropdown-content {
+                    display: block;
+                }
+            .dropdown-content a:hover {
+                    color: var(--color-primary-light);
+            }
+@media(max-width:900px){
+    .container #main_header{
+        position: relative;
+    }
+        #main_header i.fa-bars,
+        #main_header.mobile-show i.fa-bars {
+            display: inline-block;
+        }
+        #main_header nav{
+            display: none;
+            width: 100%;
+            max-height: calc(100vh - 66px);
+            position: absolute;
+            top: 66px;
+            left: 0;
+            overflow-y: auto;
+        }
+        #main_header.mobile-show nav{
+            display: inline-block; 
+        }
+            #main_header nav > a,
+            .dropdown > a {
+                width: 100%;
+                background-color: var(--color-white);
+                color: var(--color-primary-dark); 
+                padding: 5px 15px 7px;
+                line-height: 25px;
+                border-bottom: 1px solid var(--color-grey-d);
+            }  
+            #main_header nav > .dropdown > a {
+                width: 90%;
+                margin-top: 10px;
+                float: left;
+            }
+            #main_header nav > .show-angle .dropdown > i.fa-angle-down,
+            #main_header nav > .dropdown > i.fa-angle-down{
+                display: inline-block;
+                width: 10%;
+                font-size: 35px;
+                line-height: 33px;;
+                float: right;
+            }
+            .dropdown:hover
+            .dropdown-content{
+                    display: none;
+            }
+            .bot:hover {
+                border-bottom: none; 
+            }
+            .dropdown > .dropdown-content {
+                display: none;
+                position: unset;
+                width: 100%;
+                background-color: var(--color-white);
+            }
+            .dropdown.show-angle > .dropdown-content{
+                display: inline-block;
+            }
+                .dropdown > .dropdown-content > a {
+                    display: inline-block;
+                    width: 100%;
+                    background-color: var(--color-grey);
+                    border-bottom: 1px solid var(--color-grey-d);
+                }
+
+} 
