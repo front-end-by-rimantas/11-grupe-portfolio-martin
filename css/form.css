@@ -12,17 +12,20 @@ box-shadow: 0 10px 12px var(--color-grey-d);
 }  
     .message > i {
         position: absolute;
+        /* z-index: 3; */
         top: 30px;
         right: 30px;
         font-size: 60px;
         color: var(--color-grey);
     }
-    .col-8  h5 {
+    .col-8 h5 {
         font-size: 30px;
         font-family: "Poppins", sans-serif;
     }
-    .col-8  p {
-        display: inline-block;
+    .col-8 p {
+            display: inline-block;
+            /* position: relative;
+            z-index: 2; */
             width: 100%;
             line-height: 25px;
             font-size: 16px;
@@ -32,16 +35,16 @@ box-shadow: 0 10px 12px var(--color-grey-d);
     }
     
       
-        .col-8  input {
+        .col-8 input {
             display: inline-block;
             float: left;
             width: 49%;
-            margin: 20px 0;
+            margin: 15px 0 15px;
             line-height: 40px;
             font-size: 20px;
             padding: 0 10px;
         }
-        .col-8  input:last-of-type {
+        .col-8 input:last-of-type {
             margin-left: 2%;
         }
         textarea {
@@ -57,13 +60,59 @@ box-shadow: 0 10px 12px var(--color-grey-d);
         .message > a {
             margin-top: 30px;
         }
-
-    .contacts  .fa {
+    .blocks {
         display: inline-block;
-        font-size: 30px;
-        border: 1px solid var(--color-primary-dark);
-        border-radius: 50%;
-        color: var(--color-white);
-        background-color: var(--color-primary-dark);
-
+        float: left;
+        width: 100%;
+        margin-bottom: 30px;
     }
+    .col-4 > .contacts {
+        padding-bottom: 112px;
+    }   
+        .contacts .fa {
+            display: inline-block;
+            float: left;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            color: var(--color-white);
+            background-color: var(--color-primary-dark);
+        }
+        .content {
+            display: inline-block;
+            float: left;
+            margin-left: 15px;
+        }
+        .content > h3 {
+            margin-bottom: 15px;
+        }
+@media (max-width: 1100px) {
+    .row > .col-8 { 
+        width: var(--col-12);
+    }
+    .row > .col-4 { 
+        width: var(--col-12);
+    }
+    .col-4 > .contacts {
+        padding-bottom: 0;
+    }   
+}
+@media (max-width: 600px) {
+    .col-8 input:last-of-type {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .col-8 input {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .col-8 h5 {
+        font-size: 25px;
+    }
+    .col-8 p {
+        font-size: 14px;
+    }
+}
