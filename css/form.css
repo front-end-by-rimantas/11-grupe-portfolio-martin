@@ -1,23 +1,22 @@
-.row > .col-8 {
-    margin-top: 40px;
-}
-.col-8 > .message {
-    display: inline-block;
-    float: left;
-    width: 100%;
-    padding: 30px;
-    background-color: var(--color-white);
-    border-radius: 3px;
-    position: relative;
-    box-shadow: 0 10px 12px var(--color-grey-d); ;
+.col-8 > .message,
+.col-4 > .contacts {
+display: inline-block;
+float: left;
+width: 100%;
+margin-top: 50px;
+padding: 30px;
+background-color: var(--color-white);
+border-radius: 3px;
+position: relative;
+box-shadow: 0 10px 12px var(--color-grey-d);
 }  
-.message > i {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    font-size: 60px;
-    color: var(--color-grey);
-}
+    .message > i {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 60px;
+        color: var(--color-grey);
+    }
     .col-8  h5 {
         font-size: 30px;
         font-family: "Poppins", sans-serif;
@@ -31,13 +30,7 @@
             font-family: "Poppins", sans-serif;
             color: var(--color-grey-d);
     }
-    .col-8 {
-        display: inline-block;
-        float: left;
-        width: 100%;
-        margin-top: 30px;
-        padding: 20px;
-    }
+    
       
         .col-8  input {
             display: inline-block;
@@ -64,3 +57,13 @@
         .message > a {
             margin-top: 30px;
         }
+
+    .contacts  .fa {
+        display: inline-block;
+        font-size: 30px;
+        border: 1px solid var(--color-primary-dark);
+        border-radius: 50%;
+        color: var(--color-white);
+        background-color: var(--color-primary-dark);
+
+    }
