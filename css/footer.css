@@ -1,3 +1,7 @@
+#main_footer{
+    position: relative;
+    padding: 71px 0 31px;
+}
 footer{
     text-align: center;
 }
@@ -37,7 +41,7 @@ footer p{
     font-family: Arial;  
     margin-top: 70px;
 }
-.container-without::before{
+#main_footer::before{
     content: '';
     display: inline-block;
     background-color: var(--color-grey-l);
