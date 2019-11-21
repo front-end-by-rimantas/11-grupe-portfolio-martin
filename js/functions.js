@@ -36,9 +36,7 @@ function headerScroll(){
             sectionHeights.push(section.offsetTop);
         }
     }
-    // console.log(sectionHeights);
-
-
+  
     //nustatome kuri is reikalingu sekciju yra artimiausia mano aktualiai pozicijai
     // console.log(height);
     let wantedSetion = 0;
