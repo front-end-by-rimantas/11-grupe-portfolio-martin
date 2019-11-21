@@ -6,7 +6,6 @@ margin-top: 50px;
 padding: 30px;
 background-color: var(--color-white);
 border-radius: 3px;
-position: relative;
 box-shadow: 0 10px 12px var(--color-grey-d);
 border: 1px solid var(--color-grey-d-50);
 }
@@ -32,3 +31,15 @@ border: 1px solid var(--color-grey-d-50);
         font-family: "Poppins", sans-serif;
         color: var(--color-grey-d);
     }
+
+@media (max-width: 1100px) {
+    .row > .col-6.job > {
+        width: var(--col-12);
+    }
+}
+
+@media (max-width: 900px) {
+    .row > .col-6.job  {
+        width: 100%;
+    }
+}
