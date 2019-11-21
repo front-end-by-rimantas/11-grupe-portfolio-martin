@@ -12,8 +12,6 @@ function headerScroll(){
     let links = []; //tai turetu buti array, kuriame surasytume id['#' (home, kuris neturi id nes jis yra virsuje), '#about'..]
     const DOMlinks = document.querySelectorAll('#main_header nav > a');
     
-    // console.log(DOMlinks);
-
     for (let i=0; i<DOMlinks.length; i++){
         const link = DOMlinks[i];
         const href = link.href;
@@ -24,7 +22,6 @@ function headerScroll(){
             links.push( '#' + split[1] );
         }   
     }
-    // console.log(links);
 
     //randame aukscio pozicija, kurioje mus yra reikalingos sekcijos
     let sectionHeights = [];
@@ -54,28 +51,16 @@ function headerScroll(){
         }         
     }
      //jeigu randame aktualiai pozicija matome, kad ji jau yra ir kai scrol'ini ji matosi, ismeta id
-    // console.log(links[wantedSetion]);
-    // //tai pries tai domina nuoroda header> nav netenka active klases
+    // tai pries tai domina nuoroda header> nav netenka active klases
     document.querySelector(`#main_header nav > a.active`).classList.remove('active');
-// //naujoji klase header> nav gauna active klases
+ //naujoji klase header> nav gauna active klases
 document.querySelector(`#main_header nav > a[href="${links[wantedSetion]}"]`).classList.add('active');
-    // document.querySelector(`#main_header nav > a[href="${links[wantedSetion]}"]`).classList.add('bot');
-                   
+                    
     return;
 }
 
-
-
+//ADD PLAY WITH CLASS
 //Apsirasome funkciją, kad kai esame 0-scrolle jis issaukia:
-// function headerBackground() {
-//     if ( window.scrollY > 242 ) {// esame 0-scrolle jis issaukia:
-//         document.querySelector('#main_header').classList.remove('header-transparent');
-//     } else {//kaip esame headeryje, tada:
-//         document.querySelector('#main_header').classList.add('header-transparent');
-//     }
-//     return;
-// }
-
 //BANDOME REPLACE:
 function headerBackground() {
     if ( window.scrollY > 400 ) {
