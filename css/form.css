@@ -1,0 +1,124 @@
+.col-8 > .message,
+.col-4 > .contacts {
+display: inline-block;
+float: left;
+width: 100%;
+height: 440px;
+margin-top: 50px;
+padding: 30px;
+background-color: var(--color-white);
+border-radius: 3px;
+position: relative;
+box-shadow: 0 10px 12px var(--color-grey-d);
+}  
+    .message > i {
+        position: absolute;
+        /* z-index: 3; */
+        top: 30px;
+        right: 30px;
+        font-size: 60px;
+        color: var(--color-grey);
+    }
+    .col-8 h5 {
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+    }
+    .col-8 p {
+            display: inline-block;
+            /* position: relative;
+            z-index: 2; */
+            width: 100%;
+            line-height: 25px;
+            font-size: 16px;
+            padding-top: 10px;
+            font-family: "Poppins", sans-serif;
+            color: var(--color-grey-d);
+    }
+    
+      
+        .col-8 input {
+            display: inline-block;
+            float: left;
+            width: 49%;
+            margin: 15px 0 15px;
+            line-height: 40px;
+            font-size: 20px;
+            padding: 0 10px;
+        }
+        .col-8 input:last-of-type {
+            margin-left: 2%;
+        }
+        textarea {
+            display: inline-block;
+            float: left;
+            resize: vertical;
+            width: 100%;
+            line-height: 40px;
+            font-size: 20px;
+            min-height: 160px;
+            padding: 0 10px;
+        }
+        .message > a {
+            margin-top: 30px;
+        }
+    .blocks {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+        .contacts .fa {
+            display: inline-block;
+            float: left;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            color: var(--color-white);
+            background-color: var(--color-primary-dark);
+        }
+        .content {
+            display: inline-block;
+            float: left;
+            margin-left: 15px;
+        }
+        .content > h3 {
+            margin-bottom: 15px;
+        }
+@media (max-width: 1100px) {
+    .row > .col-8.me,
+    .row > .col-4.me { 
+        width: var(--col-12);
+    }
+       
+    .col-8 > .message,
+    .col-4 > .contacts  {
+        height:auto;
+    }   
+
+    .col-4 > .contacts {
+        padding-bottom: 0;
+    }
+
+}
+@media (max-width: 900px) {
+    .col-8 input {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .col-8 input:last-of-type {
+            margin: 0;
+            margin-bottom: 15px;
+    }
+}
+@media (max-width: 600px) {
+    
+    .col-8 h5 {
+        font-size: 25px;
+    }
+    .col-8 p {
+        font-size: 14px;
+    }
+}
