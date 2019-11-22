@@ -13,5 +13,5 @@ background-color: var(--color-primary-light);
 }
     .btn:hover {
         background-color: var(--color-primary-dark);
-        box-shadow: 0 10px 12px var(--color-primary-light-50);      
+        box-shadow: 0 10px 12px var(--color-grey-d);      
     }
