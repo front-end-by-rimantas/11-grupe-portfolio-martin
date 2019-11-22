@@ -1,6 +1,7 @@
 "use strict";
 
 // header
+//Two buttons
 const hamburger = document.querySelector('#main_header .fa-bars');
 const header = document.querySelector('#main_header');
 
@@ -22,6 +23,9 @@ angle.addEventListener('click', ()=>{
     return;
 });
 
+//scroll
+window.addEventListener('scroll', headerScroll);
+window.addEventListener('scroll', headerBackground);
 // hero
 
 // about me
