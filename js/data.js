@@ -47,6 +47,64 @@ const services = [
 // Freelance work
 
 // portfolio
+const myprof = [
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-1.jpg',
+        tags: ['branding', 'product'],
+        id: 'portfolio-1'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-2.jpg',
+        tags: ['photoshop'],
+        id: 'portfolio-2'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-3.jpg',
+        tags: ['fashion', 'product'],
+        id: 'portfolio-3'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-4.jpg',
+        tags: ['photoshop'],
+        id: 'portfolio-4'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-5.jpg',
+        tags: ['fashion', 'product'],
+        id: 'portfolio-5'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-6.jpg',
+        tags: ['branding'],
+        id: 'portfolio-6'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-7.jpg',
+        tags: ['branding'],
+        id: 'portfolio-7'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-8.jpg',
+        tags: ['branding'],
+        id: 'portfolio-8'
+    }
+    
+]; 
 
 // Founder
 
