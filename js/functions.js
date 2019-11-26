@@ -4,7 +4,7 @@
 function headerScroll(){
     const headerHeight = document.querySelector('#main_header').offsetHeight;
     //einamojo scrolo vieta (aukstis)
-    const height = window.scrollY+headerHeight;
+    const height = window.scrollY+2*headerHeight;
     
 
 
@@ -57,16 +57,13 @@ document.querySelector(`#main_header nav > a[href="${links[wantedSetion]}"]`).cl
     return;
 }
 
-//ADD PLAY WITH CLASS
+
 //Apsirasome funkciją, kad kai esame 0-scrolle jis issaukia:
-//BANDOME REPLACE:
 function headerBackground() {
-    if ( window.scrollY > 400 ) {
-        document.querySelector('#main_header').classList.remove('white-head');
-    } else if (window.scrollY > 80) {
-        document.querySelector('#main_header').classList.replace('header-transparent', 'white-head');
-    } else{
-        document.querySelector('#main_header').classList.add('header-transparent'); 
+    if ( window.scrollY > 90) {// esame 0-scrolle jis uzgesina:
+        document.querySelector('#main_header').classList.remove('header-transparent');
+    } else {//kaip esame headeryje, tada:
+        document.querySelector('#main_header').classList.add('header-transparent');
     }
     return;
 }
