@@ -107,6 +107,29 @@ const myprof = [
 ]; 
 
 // Founder
+const founder = [
+    {
+        foto: 'team-1.jpg',
+        text: 'lorem ipsum bloah bloah blah',
+        name: 'Nancy Bayers'
+    },
+        {
+        foto: 'team-2.jpg',
+        text: 'lorem ipsum bloah bloah blah',
+        name: 'Chloe Smith'
+    },
+    {
+        foto: 'team-3.jpg',
+        text: 'lorem ipsum bloah bloah blah',
+        name: 'Eva Daniels'
+    },
+    {
+        foto: 'team-4.jpg',
+        text: 'lorem ipsum bloah bloah blah',
+        name: 'Angelina Sinatra'
+    }
+];
+console.log(founder);
 
 // blog 
 

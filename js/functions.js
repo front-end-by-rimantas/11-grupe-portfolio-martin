@@ -264,6 +264,67 @@ function pickingPortfolio( list ){ //grazina viskas sarase, todel idedame "list"
 
 // Founder
 
+function renderFounders ( list ) {
+    const DOM = document.querySelector('#founder');
+    let HTML = '';
+    let listHTML = '';
+    let controlHTML = '';
+
+    //sukuriam founders lista
+ //   const defaultSelected = 0;
+
+    for ( let i=0; i<list.length; i++) {
+        const founder = list[i];
+            
+        listHTML += `<div class="founder-card" data-index="${i}" style="width:${100 / list.length}%;">
+                        <img src="./img/Founder/${founder.foto}" alt="photo">
+                        <p>${founder.text}</p>
+                        <h5>${founder.name}</h5>
+                        <span>co-founder</span>
+                    </div>`;    
+    }
+    
+    //sukuriam controlsus
+
+    for ( let i=0; i<list.length; i++) {
+    const control = list[i];
+
+        controlHTML +=  `<div class="control-unit" data-index="${i}"></div>`
+    }
+    //renderinam apjungtus founders
+    
+        HTML += `<div class="founder-cards">
+                    <div class="list" style="width:${list.length}00%;">
+                        ${listHTML}
+                    </div>
+                </div>
+                <div class="founder-controls">
+                    ${controlHTML}
+                </div>`;
+
+
+               DOM.innerHTML = HTML;
+    
+    // event listeneriai
+
+    const DOMcontrols = DOM.querySelectorAll('.founder-controls > .control-unit');
+    const DOMlist = DOM.querySelector('.list');
+    
+    for ( let i=0; i<DOMcontrols.length; i++ ) {
+        DOMcontrols[i].addEventListener('click', (event) => {
+        const index = parseInt(event.target.dataset.index);
+        DOMlist.style.marginLeft = (index * -100) + '%';
+
+        DOM.querySelector( '.founder-controls > .control-unit.active').classList.remove('active');
+            event.target.classList.add('active');
+
+        })
+     }
+    
+    return;
+};
+
+
 // blog 
 
 // contact me
