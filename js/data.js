@@ -110,22 +110,22 @@ const myprof = [
 const founder = [
     {
         foto: 'team-1.jpg',
-        text: 'lorem ipsum bloah bloah blah',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae, unde doloremque modi eos facere fugiat nisi quas iste accusamus porro?',
         name: 'Nancy Bayers'
     },
         {
         foto: 'team-2.jpg',
-        text: 'lorem ipsum bloah bloah blah',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae, unde doloremque modi eos facere fugiat nisi quas iste accusamus porro?',
         name: 'Chloe Smith'
     },
     {
         foto: 'team-3.jpg',
-        text: 'lorem ipsum bloah bloah blah',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae, unde doloremque modi eos facere fugiat nisi quas iste accusamus porro?',
         name: 'Eva Daniels'
     },
     {
         foto: 'team-4.jpg',
-        text: 'lorem ipsum bloah bloah blah',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae, unde doloremque modi eos facere fugiat nisi quas iste accusamus porro?',
         name: 'Angelina Sinatra'
     }
 ];

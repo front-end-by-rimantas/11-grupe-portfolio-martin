@@ -271,16 +271,18 @@ function renderFounders ( list ) {
     let controlHTML = '';
 
     //sukuriam founders lista
- //   const defaultSelected = 0;
+   const defaultSelected = 0;
 
     for ( let i=0; i<list.length; i++) {
         const founder = list[i];
             
         listHTML += `<div class="founder-card" data-index="${i}" style="width:${100 / list.length}%;">
-                        <img src="./img/Founder/${founder.foto}" alt="photo">
-                        <p>${founder.text}</p>
-                        <h5>${founder.name}</h5>
-                        <span>co-founder</span>
+                        <div class="goodluck">
+                            <img src="./img/Founder/${founder.foto}" alt="photo">
+                            <p>${founder.text}</p>
+                            <h5>${founder.name}</h5>
+                            <span>co-founder</span>
+                        </div>
                     </div>`;    
     }
     
@@ -289,17 +291,17 @@ function renderFounders ( list ) {
     for ( let i=0; i<list.length; i++) {
     const control = list[i];
 
-        controlHTML +=  `<div class="control-unit" data-index="${i}"></div>`
+        controlHTML +=  `<div class="control-unit ${ i === 0 ? 'active' : ''} " data-index="${i}"></div>`
     }
     //renderinam apjungtus founders
     
         HTML += `<div class="founder-cards">
                     <div class="list" style="width:${list.length}00%;">
-                        ${listHTML}
+                            ${listHTML}
                     </div>
-                </div>
-                <div class="founder-controls">
-                    ${controlHTML}
+                    <div class="founder-controls">
+                        ${controlHTML}
+                    </div>
                 </div>`;
 
 

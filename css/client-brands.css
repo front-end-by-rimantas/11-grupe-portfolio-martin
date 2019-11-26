@@ -1,10 +1,10 @@
  .founder-cards {
     display: inline-block;
-    width: 100%;
-    margin: 0 calc( (100% - 50%) / 2 ) 0;
+    width: var(--col-6);
+    margin: 0 calc( (100% - var(--col-6) ) / 2 ) 0;
     margin-bottom: 20px;
     text-align: center;
-    padding: 40px 20px 20px;
+    padding: 10px 5px 20px;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -14,20 +14,26 @@
     width: 400%;
     transition: all 1s;
 }
-    .founder-cards > .list > .founder-card {
+.founder-cards > .list > .founder-card {
+    display: inline-block;
+    width: 100%;
+}
+    .founder-cards > .list > .founder-card > .goodluck {
         display: inline-block;
         padding: 40px 20px 20px;
         background-color: #fff;
         border: 1px solid var(--color-grey-d);
         border-radius: 5px;
         box-shadow: 0 10px 12px var(--color-grey-d);
+        width: var(--col-12);
+
     }
-        .founder-cards > .list > .founder-card > img {
+        .founder-cards > .list > .founder-card  > .goodluck > img {
             display: inline-block;
             border-radius: 50%;
             margin-bottom: 30px;
         }
-        .founder-cards > .list > .founder-card > p {
+        .founder-cards > .list > .founder-card > .goodluck > p {
             display: inline-block;  
             width: 100%;
             color: var(--color-grey-d);
@@ -35,27 +41,27 @@
             font-size: 18px;
             margin: 0 0 20px 0;
         }
-        .founder-cards > .list > .founder-card > h5 {
+        .founder-cards > .list > .founder-card > .goodluck > h5 {
             display: inline-block;
             width: 100%;
             line-height: 24px;
             font-size: 22px;
             margin: 0 0 4px 0;
         }
-        .founder-cards > .list > .founder-card > span {
+        .founder-cards > .list > .founder-card > .goodluck > span {
             display: inline-block;
             width: 100%;
             color: var(--color-grey-d);
             line-height: 20px;
             font-size: 18px;
          } 
-.founder-controls {
+.founder-cards > .founder-controls {
     display: inline-block;
     width: auto;
-    margin: 20px calc( 100% / 2  );
+    margin: 20px;
     color: var(--color-primary-light);
 }
-    .founder-controls > .control-unit {
+    .founder-cards > .founder-controls > .control-unit {
         display: inline-block;
         width: 20px;
         height: 20px;
@@ -65,6 +71,6 @@
         border-radius: 50%;
         cursor: pointer;
     }
-        .founder-controls > .control-unit.active{
+        .founder-cards > .founder-controls > .control-unit.active{
             background-color: var(--color-primary-light);
         } 
