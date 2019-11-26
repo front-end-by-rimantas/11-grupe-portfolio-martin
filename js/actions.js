@@ -39,6 +39,7 @@ renderBlocks('my-services', services);
 // Freelance work
 
 // portfolio
+pickingPortfolio (myprof);
 
 // Founder
 

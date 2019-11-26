@@ -16,4 +16,5 @@
    --p-bb: 130;
    --color-grey-d-50: rgb(var(--p-rr), var(--p-gg), var(--p-bb), 0.4);
    --color-white: #FFFFFF;
+   --color-grey-d-60: rgb(var(--p-rr), var(--p-gg), var(--p-bb), 0.6);
 }
