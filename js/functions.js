@@ -169,19 +169,7 @@ function pickingPortfolio( list ){ //grazina viskas sarase, todel idedame "list"
    //4 kol aprasinejamas stilius, pastebima, kad tag'ai kurie turi du elemntus, nera atskirti tarpais. todel rasome dar viena cikla ir juos atskiriame
     // console.log(list.length);
     for(let i=0; i<list.length; i++){
-        const picinfo = list[i];
-        
-
-        //visa tai galime aprasyti su fun-ja join, kur tarp elemntu ir pakeicia tarpus su kbleliais.
-        // let tags = '';
-        // for(let j=0; j<picinfo.tags.length; j++){
-        //     if( j !==0 ){
-        //         tags +=', ';
-        //     }
-        //     tags+=picinfo.tags[j];
-        //     console.log(tags);
-        // }
-
+        const picinfo = list[i];        
         // console.log(picinfo);
         photolistHTML+=`<div class="port show">
                              <a href="#${picinfo.id}"></a>
@@ -235,44 +223,7 @@ function pickingPortfolio( list ){ //grazina viskas sarase, todel idedame "list"
         // console.log(ALLlist);
         // console.log(document.querySelectorAll('.choise > .navline > .navbar > h4'));
         Domact.classList.remove('active');
-        clickbtn.classList.add('active');
-
-        ///BANDYMAS 2;
-        // let textContent = [];
-        // // console.log(textContent)
-        // for ( let i=0; i<ALLlist.length; i++){
-        //     // console.log (ALLlist.length);
-        //     const allh4 = ALLlist[i].textContent; 
-        //     textContent.push(allh4);
-        //     // console.log(textContent); 
-        //     // console.log(navlist);
-        // }
-        // console.log(textContent);
-        // for( let i=0; i<textContent.length; i++ ){
-        //     if (textContent[i] === navlist){
-        //         // document.querySelector(`.choise > .navline > .navbar > h4[textContent="${textContent[i]}"]`).classList.add('active');
-        //          console.log('good',textContent[i]);
-        //     } else {
-        //         // Domact.classList.remove('active');
-        //         console.log('bad');
-        //     }
-        // }
-        
-
-
-            
-            // Domact.classList.remove('active');
-            // // if ( textContent[i] === navlist){
-            //     document.querySelector(`.choise > .navline > .navbar > h4[textContent="${navlist}"]`).classList.add('active');
-            //     console.log(ALLlist);
-            
-                // } else {
-             
-            // }
-
-
-        
-       
+        clickbtn.classList.add('active');   
 
         // document.querySelector(`.choise > .navline > .navbar > h4[event.target.textContent="${navlist}"]`).classList.add('active');
         // Domact.classList.add('active');
@@ -289,14 +240,6 @@ function pickingPortfolio( list ){ //grazina viskas sarase, todel idedame "list"
              }
              return;
          }
-////////BANDYMAS ISISMTI ACTIVE CLASS
-        // Domact.classList.remove('active');
-        // document.querySelector(`.choise > .navline > .navbar > h4[textContent="${navlist}"]`).classList.add('active');
-            
-        // console.log(document.querySelectorAll(`.choise > .navline > .navbar > h4[textContent="${navlist}"]`));
-         // // //naujoji klase header> nav gauna active klases
-            //  document.querySelector(`#main_header nav > a[href="${links[wantedSetion]}"]`).classList.add('active');
-
         //3.1 einame per visa musus list'a myprof:
         for( let i=0; i<myprof.length; i++ ){
             const picinfos = myprof[i];
@@ -314,9 +257,7 @@ function pickingPortfolio( list ){ //grazina viskas sarase, todel idedame "list"
             } else {
                 DOMmyprof[i].classList.remove('show');
             }           
-
         }   
-
         return;
     }
 
