@@ -1,20 +1,23 @@
  .founder-cards {
+     /* background-color: brown; */
     display: inline-block;
     width: var(--col-6);
     margin: 0 calc( (100% - var(--col-6) ) / 2 ) 0;
     margin-bottom: 20px;
     text-align: center;
-    padding: 10px 5px 20px;
+    padding: 10px 0 20px;
     border-radius: 5px;
     overflow: hidden;
 }
 .founder-cards > .list {
+    /* background-color: rgb(150, 204, 24); */
     display: inline-block;
     float: left;
     width: 400%;
     transition: all 1s;
 }
 .founder-cards > .list > .founder-card {
+    /* background-color: rgb(48, 138, 211); */
     display: inline-block;
     width: 100%;
 }
@@ -76,27 +79,41 @@
         } 
 
 @media (max-width: 1300px) {
-    .row > .col-12 > .founder-cards {
+    .row > .founder-cards {
         display: inline-block;
-        margin: 0 calc( (100% - var(--col-8) ) / 2 ) 0;
+        margin: 0 calc( ( 100% - var(--col-6) ) / 2 ) 0;
+        width: var(--col-6);
+    }
+}
+@media (max-width: 1100px) {
+    .row > .founder-cards {
+        display: inline-block;
+        margin: 0 calc( ( 100% - var(--col-8) ) / 2 ) 0;
         width: var(--col-8);
-        text-align: center;
     }
 }
 @media (max-width: 900px) {
-    .row > .col-12 > .founder-cards {
+    .row > .founder-cards {
         display: inline-block;
         margin: 0 calc( (100% - var(--col-12) ) / 2 ) 0;
         width: var(--col-12);
-        text-align: center;
     }
 }
-@media (max-width: 600px) {
-    .row > .col-12 > .founder-cards {
+@media (max-width: 700px) {
+    .row > .founder-cards {
         display: inline-block;
-        /* margin: 0 calc( 100%  / 2 ) 0; */
-        width: 100%;
-        text-align: center;
-        padding: 0;
+        margin: 0 calc( (100% - var(--col-12) ) / 2 ) 0;
+        width: var(--col-12);
+    }
+}
+@media (max-width: 400px) {
+    .row > .founder-cards {
+        display: inline-block;
+        margin: 0 calc( (100% - var(--col-12) ) / 2 ) 0;
+        width: var(--col-12);
+    }
+    .founder-cards > .list > .founder-card > .goodluck > p {
+        line-height: 20px;
+        font-size: 16px;
     }
 }
