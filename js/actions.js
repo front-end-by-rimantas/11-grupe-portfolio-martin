@@ -43,6 +43,8 @@ pickingPortfolio (myprof);
 
 // Founder
 
+renderFounders (founder);
+
 // blog 
 
 // contact me
