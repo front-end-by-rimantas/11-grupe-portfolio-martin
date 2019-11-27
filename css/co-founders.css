@@ -1,5 +1,4 @@
  .founder-cards {
-     /* background-color: brown; */
     display: inline-block;
     width: var(--col-6);
     margin: 0 calc( (100% - var(--col-6) ) / 2 ) 0;
@@ -10,14 +9,12 @@
     overflow: hidden;
 }
     .founder-cards > .list {
-        /* background-color: rgb(150, 204, 24); */
         display: inline-block;
         float: left;
         width: 400%;
         transition: all 1s;
     }
         .founder-cards > .list > .founder-card {
-            /* background-color: rgb(48, 138, 211); */
             display: inline-block;
             width: 100%;
         }

@@ -271,7 +271,6 @@ function renderFounders ( list ) {
     let controlHTML = '';
 
     //sukuriam founders lista
-   const defaultSelected = 0;
 
     for ( let i=0; i<list.length; i++) {
         const founder = list[i];
@@ -289,7 +288,6 @@ function renderFounders ( list ) {
     //sukuriam controlsus
 
     for ( let i=0; i<list.length; i++) {
-    const control = list[i];
 
         controlHTML +=  `<div class="control-unit ${ i === 0 ? 'active' : ''} " data-index="${i}"></div>`
     }
@@ -303,7 +301,6 @@ function renderFounders ( list ) {
                         ${controlHTML}
                     </div>
                 </div>`;
-
 
                DOM.innerHTML = HTML;
     
