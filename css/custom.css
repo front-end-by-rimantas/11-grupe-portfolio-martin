@@ -1,8 +1,5 @@
 /************************************************************/
 /* BASIC */
-img{
-    width: 100px;
-}
 
 /************************************************************/
 
@@ -70,6 +67,24 @@ h2 {
 /* ABOUT ME */
 
 /************************************************************/
+#about .social > a {
+    color: var(--color-grey);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 4px 12px;
+    background-color: var(--color-primary-dark);
+    margin-right: 2px
+}
+    #about .social > a:hover {
+        padding: 3px 11px;
+        color: var(--color-primary-dark);
+        background-color: var(--color-grey);
+        border: 1px solid var(--color-primary-dark);
+    }
+    .intro > .btn {
+        margin-top: 30px;
+    }
 
 /************************************************************/
 /* MY SERVICES */
