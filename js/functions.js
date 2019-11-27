@@ -172,9 +172,8 @@ function pickingPortfolio( list ){ //grazina viskas sarase, todel idedame "list"
         const picinfo = list[i];        
         // console.log(picinfo);
         photolistHTML+=`<div class="port show">
-                             <a href="#${picinfo.id}"></a>
                             <img src="./img/My portfolio/${picinfo.photos}">
-                            <div class="hover">
+                            <div class="hover" id="${picinfo.id}">
                             <h4>${picinfo.name}</h4>
                             <p>${picinfo.tags.join(', ')}</p>
                             </div>
@@ -261,7 +260,43 @@ function pickingPortfolio( list ){ //grazina viskas sarase, todel idedame "list"
         return;
     }
 
-
+    function portfolioPhotos(dataPortfolio, list) {
+        let HTML = '';
+        let step = 0;
+        //1. patikriname ar tai yra array, jei ne graziname Error 
+    
+           if ( !Array.isArray(list) ) {
+            return console.error('ERROR: reikia saraso');
+        }
+        // patikriname, kad jei butu vienas blogas blokas, t.y, jei nebutu vieno is triju elemntu, tai kad suktu cikla toliau.
+        for ( let i=0; i<list.length; i++) {
+            const iteml = list[i];
+            if(!iteml.lightID||
+               !iteml.contNo||
+               !iteml.bigPhotos){
+                   continue;
+               }
+                HTML += `<div class="portfolio-lightboxes" id="${iteml.lightID}">
+                            <div class="background"></div>
+                            <div class="portfolio-content" id="${iteml.contNo}">
+                                <img src="./img/My portfolio/${iteml.bigPhotos}" alt="">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>`;
+        step++;
+            //kad suktu tik tiek kie yra bloku, siuo ateju 6 lista sudaro elementai nuo 0 iki 5.
+            //visa funkcija
+            if ( step === 8) {
+                break;
+            }
+        }
+        // Patikriname, kad sarasa nebutu turcias, jei ne error
+        if ( step === 0 ) {
+            return console.error('ERROR: duotas sarasas, turi buti ne tuscias!!!');
+        }
+        
+        return document.getElementById('lightbox_main').innerHTML = HTML;
+    }
 // Founder
 
 function renderFounders ( list ) {
