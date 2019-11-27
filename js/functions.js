@@ -376,7 +376,7 @@ function renderBlogs ( list ) {
                         <div class="blog-content">
                             <div class="span-dates">
                                 <span class="span-value">${blog.date}</span>
-                                <span class="span-label">Design</span>
+                                <span class="span-label">${blog.category}</span>
                             </div>
                             <h5>${blog.header}</h5>
                             <p>${blog.about}.</p>
@@ -384,7 +384,7 @@ function renderBlogs ( list ) {
                         </div>
                     </div>`;
         }
-        
+
         DOM.innerHTML = HTML;
     return;
 }

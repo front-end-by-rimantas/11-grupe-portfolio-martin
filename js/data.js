@@ -179,18 +179,21 @@ const blog = [
     {
         photo: 'blog-1.jpg',
         date: '02 Mar 2019',
+        category: 'Design',
         header: 'Make your Marketing website',
         about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
     },
     {
         photo: 'blog-2.jpg',
         date: '02 Mar 2019',
+        category: 'Ideas',
         header: 'Make your Marketing website',
         about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
     },
     {
         photo: 'blog-3.jpg',
         date: '02 Mar 2019',
+        category: 'Task\'s',
         header: 'Make your Marketing website',
         about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
     }
