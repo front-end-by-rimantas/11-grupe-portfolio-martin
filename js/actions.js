@@ -160,6 +160,8 @@ renderFounders (founder);
 
 // blog 
 
+renderBlogs (blog);
+
 // contact me
 
 // footer
