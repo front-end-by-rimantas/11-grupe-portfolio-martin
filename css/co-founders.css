@@ -29,6 +29,7 @@
             }
                 .founder-cards > .list > .founder-card  > .goodluck > img {
                     display: inline-block;
+                    width: 100px;
                     border-radius: 50%;
                     margin-bottom: 30px;
                 }
