@@ -4,10 +4,12 @@
 @import './layout.css';
 @import './button.css';
 @import './block.css';
-@import './client-brands.css';
+@import './co-founders.css';
 @import './footer.css';
 @import './form.css';
-@import './gallery.css';
+@import './portfolio.css';
 @import './header.css';
 @import './hero.css';
 @import './blog.css';
+@import './resume.css';
+@import './about.css';

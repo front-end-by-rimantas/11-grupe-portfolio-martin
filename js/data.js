@@ -47,8 +47,132 @@ const services = [
 // Freelance work
 
 // portfolio
+const myprof = [
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-1.jpg',
+        tags: ['branding', 'product'],
+        id: 'portfolio-1'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-2.jpg',
+        tags: ['photoshop'],
+        id: 'portfolio-2'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-3.jpg',
+        tags: ['fashion', 'product'],
+        id: 'portfolio-3'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-4.jpg',
+        tags: ['photoshop'],
+        id: 'portfolio-4'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-5.jpg',
+        tags: ['fashion', 'product'],
+        id: 'portfolio-5'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-6.jpg',
+        tags: ['branding'],
+        id: 'portfolio-6'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-7.jpg',
+        tags: ['branding'],
+        id: 'portfolio-7'
+
+    },
+    {
+        name: 'Our Photography',
+        photos: 'portfolio-8.jpg',
+        tags: ['branding'],
+        id: 'portfolio-8'
+    }
+    
+]; 
+const dataPortfolio = [
+    {
+        lightID: 'lightbox-1',
+        contNo: 'content_show-1',
+        bigPhotos: 'portfolio-1.jpg'
+    },
+    {
+        lightID: 'lightbox-2',
+        contNo: 'content_show-2',
+        bigPhotos: 'portfolio-2.jpg'
+    },
+    {
+        lightID: 'lightbox-3',
+        contNo: 'content_show-3',
+        bigPhotos: 'portfolio-3.jpg'
+    },
+    {
+        lightID: 'lightbox-4',
+        contNo: 'content_show-4',
+        bigPhotos: 'portfolio-4.jpg'
+    },
+    {
+        lightID: 'lightbox-5',
+        contNo: 'content_show-5',
+        bigPhotos: 'portfolio-5.jpg'
+    },
+    {
+        lightID: 'lightbox-6',
+        contNo: 'content_show-6',
+        bigPhotos: 'portfolio-6.jpg'
+    },
+    {
+        lightID: 'lightbox-7',
+        contNo: 'content_show-7',
+        bigPhotos: 'portfolio-7.jpg'
+    },
+    {
+        lightID: 'lightbox-8',
+        contNo: 'content_show-8',
+        bigPhotos: 'portfolio-8.jpg'
+    } 
+    
+];
 
 // Founder
+const founder = [
+    {
+        foto: 'team-1.jpg',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae',
+        name: 'Nancy Bayers'
+    },
+        {
+        foto: 'team-2.jpg',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae',
+        name: 'Chloe Smith'
+    },
+    {
+        foto: 'team-3.jpg',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae',
+        name: 'Eva Daniels'
+    },
+    {
+        foto: 'team-4.jpg',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae',
+        name: 'Angelina Sinatra'
+    }
+];
+console.log(founder);
 
 // blog 
 

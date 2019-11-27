@@ -28,6 +28,7 @@
                             <a href="#">Single Blog</a>
                         </div>
                     </div>
+                    <a href="#">Home</a>
                     <a href="#about" class="active">About</a>
                     <a href="#service">Services</a>
                     <a href="#portfolio">Portfolio</a>
@@ -65,15 +66,28 @@
     <!-- about me start -->
     <div class="container" id="about">
         <div class="row">
-            <div class="col-5">
-                <img src="./img/About me.jpg" alt="About me">
+            <div class="col-5 about">
+                <div class="image"><img src="./img/About me.jpg" alt="About me">
+                </div>
             </div>
-            <div class="col-7">
-                <h2 class="with-style">About <span class="sp-red"> me </span></h2>
-                <h4></h4>
-                <p></p>
-                <p></p>
-                <a class="btn" href="#"></a>          
+            <div class="col-7 about">
+                <div class="intro">
+                    <h2 class="with-style">About <span class="sp-red"> me </span></h2>
+                    <h4>Hello! i'm Martin Luther</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="social">
+                        <a href="index.html" class="fa fa-facebook"></a>
+                        <a href="index.html" class="fa fa-twitter"></a>
+                        <a href="index.html" class="fa fa-instagram"></a>
+                        <a href="index.html" class="fa fa-linkedin"></a>
+                        <a href="index.html" class="fa fa-pinterest-p"></a>
+                    </div>
+                    <a class="btn" href="#">contact me</a>
+                    <a class="btn" href="#">download cv</a>
+                </div>
+                
+                
             </div>        
         </div>
     </div>        
@@ -96,8 +110,28 @@
             <h2><span class="sp-red"> MY </span> RESUME</h2>
         </div>
         <div class="row">
-            <div class="col-6"> RESUME</div>
-            <div class="col-6"> RESUME</div>
+            <div class="col-6">
+                <div class="resume">
+                    <h3 class="head">work</h3>
+                    <h3>apple</h3>
+                    <p class="date">OCT 2015 - JUNE 2016</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam qui laborum magni, facilis doloremque perspiciatis, natus ipsum a autem enim accusantium cumque perferendis rerum quibusdam non rem exercitationem nulla vel odit suscipit.</p>
+                    <h3>google</h3>
+                    <p class="date">OCT 2015 - JUNE 2016</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam qui laborum magni, facilis doloremque perspiciatis, natus ipsum a autem enim accusantium cumque perferendis rerum quibusdam non rem exercitationem nulla vel odit suscipit.</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="resume"> 
+                    <h3 class="head">work</h3>
+                    <h3>apple</h3>
+                    <p class="date">OCT 2015 - JUNE 2016</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam qui laborum magni, facilis doloremque perspiciatis, natus ipsum a autem enim accusantium cumque perferendis rerum quibusdam non rem exercitationem nulla vel odit suscipit.</p>
+                    <h3>google</h3>
+                    <p class="date">OCT 2015 - JUNE 2016</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam qui laborum magni, facilis doloremque perspiciatis, natus ipsum a autem enim accusantium cumque perferendis rerum quibusdam non rem exercitationem nulla vel odit suscipit.</p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- job history end -->
@@ -124,23 +158,19 @@
                 <h2><span class="sp-red"> MY </span> PORTFOLIO</h2>
             </div>
         </div>
-        <div class="row">
-                <div class="col-12">
-                    <h5>NAV bar</h5>
-                </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <h5>foto</h5>
-             </div>
+        <div class="row" id="myPortfolio">
         </div>
     </div>        
     <!-- portfolio end -->
+    
+    <!-- portfolio-lightboxes -->
+    <div class="blabla" id="lightbox_main"></div>
+    <!-- portfolio-lightboxes-->
+    
 
     <!-- Founder start -->
     <div class="container bg-grey">
-        <div class="row">
-            <div class="col-12">CO-FOUNDER</div>
+        <div class="row" id="founder">
         </div>
     </div>
     <!-- Founder end -->

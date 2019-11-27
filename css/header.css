@@ -76,6 +76,9 @@
             cursor: pointer;
             position: relative;
         }
+        #main_header nav a:nth-child(2){
+            display: none;
+        }
         #main_header nav .dropdown > a::after {
             display: inline-block;
             content: '';
@@ -172,55 +175,6 @@
             color: var(--color-primary-dark);
         }
         #main_header.header-transparent nav .dropdown > .dropdown-content a:hover {
-            color: var(--color-primary-light);
-    }
-/**********************************/
-/************CLASS WHITE**********/
-/********************************/
-#main_header.white-head {
-    background-color: white;
-}
-    #main_header.white-head h3 {
-        color: var(--color-primary-light);
-    }
-    #main_header.white-head nav a {
-        color: var(--color-primary-dark);
-    }
-        #main_header.white-head nav > a::after {
-            display: inline-block;
-            content: '';
-            height: 2px;
-            position: absolute;
-            width: 0;
-            left: 0;
-            bottom: 0;
-            background-color:var(--color-primary-light);
-            transition: all 1s;
-        }
-        #main_header.white-head nav > a:hover::after{
-            width: 100%;
-        }
-        #main_header.white-head nav .dropdown a {
-            color: var(--color-primary-dark);
-        }
-        #main_header.white-head nav .dropdown > a::after {
-            display: inline-block;
-            content: '';
-            height: 2px;
-            position: absolute;
-            width: 0;
-            left: 0;
-            bottom: 0;
-            background-color:var(--color-primary-light);
-            transition: all 1s;
-        }
-        #main_header.white-head nav .dropdown > a:hover::after{
-            width: 100%;
-        }
-        #main_header.white-head nav .dropdown > .dropdown-content > a {
-            color: var(--color-primary-dark);
-        }
-        #main_header.white-head nav .dropdown > .dropdown-content a:hover {
             color: var(--color-primary-light);
     }
 /****************************/
