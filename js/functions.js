@@ -361,6 +361,34 @@ function renderFounders ( list ) {
 
 // blog 
 
+function renderBlogs ( list ) {
+
+    const DOM = document.querySelector('#blogs-func');
+    let HTML = '';
+
+        for ( let i=0; i<list.length; i++) {
+            const blog = list[i];
+
+            HTML += `<div class="col-4 blog">
+                        <div class="blog-img">
+                            <img src="./img/My blogs/${blog.photo}" alt="blog-1">
+                        </div>
+                        <div class="blog-content">
+                            <div class="span-dates">
+                                <span class="span-value">${blog.date}</span>
+                                <span class="span-label">Design</span>
+                            </div>
+                            <h5>${blog.header}</h5>
+                            <p>${blog.about}.</p>
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </div>`;
+        }
+        
+        DOM.innerHTML = HTML;
+    return;
+}
+
 // contact me
 
 // footer
