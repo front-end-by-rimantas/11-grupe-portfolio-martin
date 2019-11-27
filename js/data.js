@@ -107,6 +107,29 @@ const myprof = [
 ]; 
 
 // Founder
+const founder = [
+    {
+        foto: 'team-1.jpg',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae',
+        name: 'Nancy Bayers'
+    },
+        {
+        foto: 'team-2.jpg',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae',
+        name: 'Chloe Smith'
+    },
+    {
+        foto: 'team-3.jpg',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae',
+        name: 'Eva Daniels'
+    },
+    {
+        foto: 'team-4.jpg',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt expedita mollitia reprehenderit consequatur, ipsa at veritatis, quia vitae',
+        name: 'Angelina Sinatra'
+    }
+];
+console.log(founder);
 
 // blog 
 
