@@ -107,43 +107,35 @@ const myprof = [
 ]; 
 const dataPortfolio = [
     {
-        lightID: 'lightbox-1',
-        contNo: 'content_show-1',
+        datal: 'portfolio-1',
         bigPhotos: 'portfolio-1.jpg'
     },
     {
-        lightID: 'lightbox-2',
-        contNo: 'content_show-2',
+        datal: 'portfolio-2',
         bigPhotos: 'portfolio-2.jpg'
     },
     {
-        lightID: 'lightbox-3',
-        contNo: 'content_show-3',
+        datal: 'portfolio-3',
         bigPhotos: 'portfolio-3.jpg'
     },
     {
-        lightID: 'lightbox-4',
-        contNo: 'content_show-4',
+        datal: 'portfolio-4',
         bigPhotos: 'portfolio-4.jpg'
     },
     {
-        lightID: 'lightbox-5',
-        contNo: 'content_show-5',
+        datal: 'portfolio-5',
         bigPhotos: 'portfolio-5.jpg'
     },
     {
-        lightID: 'lightbox-6',
-        contNo: 'content_show-6',
+        datal: 'portfolio-6',
         bigPhotos: 'portfolio-6.jpg'
     },
     {
-        lightID: 'lightbox-7',
-        contNo: 'content_show-7',
+        datal: 'portfolio-7',
         bigPhotos: 'portfolio-7.jpg'
     },
     {
-        lightID: 'lightbox-8',
-        contNo: 'content_show-8',
+        datal: 'portfolio-8',
         bigPhotos: 'portfolio-8.jpg'
     } 
     
