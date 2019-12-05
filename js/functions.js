@@ -173,7 +173,7 @@ function pickingPortfolio( list ){ //grazina viskas sarase, todel idedame "list"
         // console.log(picinfo);
         photolistHTML+=`<div class="port show">
                             <img src="./img/My portfolio/${picinfo.photos}">
-                            <div class="hover" id="${picinfo.id}">
+                            <div class="hover" data-pic="${picinfo.id}">
                             <h4>${picinfo.name}</h4>
                             <p>${picinfo.tags.join(', ')}</p>
                             </div>
@@ -260,7 +260,7 @@ function pickingPortfolio( list ){ //grazina viskas sarase, todel idedame "list"
         return;
     }
 
-    function portfolioPhotos(dataPortfolio, list) {
+    function portfolioPhotos( list) {
         let HTML = '';
         let step = 0;
         //1. patikriname ar tai yra array, jei ne graziname Error 
@@ -271,14 +271,13 @@ function pickingPortfolio( list ){ //grazina viskas sarase, todel idedame "list"
         // patikriname, kad jei butu vienas blogas blokas, t.y, jei nebutu vieno is triju elemntu, tai kad suktu cikla toliau.
         for ( let i=0; i<list.length; i++) {
             const iteml = list[i];
-            if(!iteml.lightID||
-               !iteml.contNo||
+            if(!iteml.datal||
                !iteml.bigPhotos){
                    continue;
                }
-                HTML += `<div class="portfolio-lightboxes" id="${iteml.lightID}">
+                HTML += `<div class="portfolio-lightboxes" data-lpic="${iteml.datal}">
                             <div class="background"></div>
-                            <div class="portfolio-content" id="${iteml.contNo}">
+                            <div class="portfolio-content">
                                 <img src="./img/My portfolio/${iteml.bigPhotos}" alt="">
                                 <i class="fa fa-times"></i>
                             </div>
